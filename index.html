@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>charity website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <script src="https://kit.fontawesome.com/ecfd6f69ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">charity</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="div1">
+    <div class="div2">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/high.jpg" width="100%" height="600vh">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/images.jpg" width="100%" height="600vh">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/africa.jpg" width="100%" height="600vh">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="centered">
+                <h1 class="hello1">GIVE A HAND</h1>
+                <h1 class="hello2">TO SAVE AN AFRICAN CHILD</h1>
+                <p>A hand that gives is thre hand that receives</p>
+                <br>
+                <br>
+                <a class="button1" href="#">Donate Now</a>
+            </div>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+    </div>
+    <div class="about-section">
+      <h1>More About Us</h1>
+      <p>Comitted to do more for more children who are vulnerable. </p>
+          <p>Working To Help & Support Vulnerable Children Living In Extreme Poverty. </p>
+  </div>
+  <h2 style="text-align: center">Our Team</h2>
+  <div class="row1">
+      <div class="column1">
+          <div class="card">
+              <img src="images/person1.jpg" style="width: 100%; height: 200px;" alt="team-picture" />
+              <div class="container">
+                  <h2>Andy Cruiser</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>All Children Deserve A Chance To Build A Future Out Of Poverty</p>
+                  <p>andy@charity.com</p>
+                  <p><button class="button">Contact</button></p>
+              </div>
+          </div>
+      </div>
+
+      <div class="column1">
+          <div class="card">
+              <img src="images/person2.jpg" style="width: 100%; height: 200px;" alt="team-picture" />
+              <div class="container">
+                  <h2>Andy Cruiser</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>All Children Deserve A Chance To Build A Future Out Of Poverty</p>
+                  <p>andy@charity.com</p>
+                  <p><button class="button">Contact</button></p>
+              </div>
+          </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+            <img src="images/person3.jpg" style="width: 100%; height: 200px;" alt="team-picture" />
+            <div class="container">
+                <h2>Andy Cruiser</h2>
+                <p class="title">CEO & Founder</p>
+                <p>All Children Deserve A Chance To Build A Future Out Of Poverty</p>
+                <p>andy@charity.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
